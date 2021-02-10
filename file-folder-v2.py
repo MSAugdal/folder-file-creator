@@ -12,9 +12,9 @@ class FolderFileCreator:
 
     def making_file(self):
         file_type = input(
-            "what file type do you want your file to be: ").strip().lower()
+            "what file type do you want your file to be: ").replace(" ", "").strip().lower()
         file = input(
-            "what do you want your file to be called: ").strip().title()
+            "what do you want your file to be called: ").replace(" ", "").strip().title()
         file_path = os.path.join(dir_path, file)
         with open(file_path+f"{file_type}", "w") as newfile:
             newfile.write("welcome to your newly created file!")

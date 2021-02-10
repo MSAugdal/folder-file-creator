@@ -2,7 +2,7 @@ import os
 
 
 class FolderFileCreator:
-    def making_directory(self):
+    def make_directory(self):
         parent_dir = r"F:\OneDrive\Skrivebord"
         directory = input(
             "what do you want your directory to be called: ").strip().title()
@@ -10,7 +10,7 @@ class FolderFileCreator:
         dir_path = os.path.join(parent_dir, directory)
         os.mkdir(dir_path)
 
-    def making_file(self):
+    def make_file(self):
         file_type = input(
             "what file type do you want your file to be: ").replace(" ", "").strip().lower()
         file = input(

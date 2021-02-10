@@ -2,7 +2,6 @@ import os
 
 
 class FolderFileCreator:
-
     parent_dir = r"F:\OneDrive\Skrivebord"
     directory = input("what do you want your directory to be called: ").strip().title()
     dir_path = os.path.join(parent_dir, directory)

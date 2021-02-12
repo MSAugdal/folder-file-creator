@@ -31,7 +31,7 @@ class FolderFileCreator:
                 "\nwhat do you want your file to be named: ").replace(" ", "").strip().title()
             file_path = os.path.join(dir_path, file)
 
-            with open(file_path+f"{file_type}", "w") as newfile:
+            with open(file_path+file_type, "w") as newfile:
                 if file_type == ".py":
                     newfile.write(
                         "# welcome to your newly created python file!")

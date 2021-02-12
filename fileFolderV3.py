@@ -1,4 +1,5 @@
 import os
+from time import sleep
 
 
 class FolderFileCreator:
@@ -15,7 +16,7 @@ class FolderFileCreator:
             print("\nthis directory already exists.")
             print("please choose a new name.\n")
         else:
-            print("your directory was successfully created.")
+            print("\nyour directory was successfully created.")
             break
 
     while True:
@@ -40,7 +41,8 @@ class FolderFileCreator:
                 elif file_type == ".csv":
                     newfile.write("welcome to your newly created csv file!")
 
-            print("your file was successfully created.\n")
+            print("\nyour file was successfully created.\n")
             print("process finished.")
             print("you can now enjoy your new directory and file!")
+            sleep(3)
             break

@@ -3,7 +3,7 @@ from time import sleep
 
 
 class FolderFileCreator:
-    parent_dir = r"F:\OneDrive\Skrivebord"
+    parent_dir = r"your diretory path"
     file_types = [".py", ".txt", ".csv"]
 
     while True:

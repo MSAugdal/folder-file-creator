@@ -12,7 +12,8 @@ def folderFileCreator():
         dir_path = os.path.join(parent_dir, directory)
         try:
             os.mkdir(dir_path)
-        except:
+        except Exception as ex:
+            print(ex)
             print("\nthis directory already exists.")
             print("please choose a new name.\n")
         else:

@@ -1,3 +1,4 @@
+
 import os
 from time import sleep
 
@@ -13,8 +14,8 @@ def folderFileCreator():
         try:
             os.mkdir(dir_path)
         except Exception as ex:
-            print(ex)
             print("\nthis directory already exists.")
+            print(ex)
             print("please choose a new name.\n")
         else:
             print("\nyour directory was successfully created.")
